@@ -5,15 +5,15 @@ import style from '../style';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='flex w-full justify-between items-center navbar py-6'>
         <img src={logo} alt="navLogo" 
         className='w-[124px] h-32px'
         />
-        <ul>
+        <ul className='flex-1 sm:flex hidden  list-none justify-end items-center '>
             {navLinks.map((nav, index) => (
                 <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length -1 ? "mr-0" : "mr-10"}`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length -1 ? "mr-0" : "mr-10"} text-white`}
                 >
                     <a href={`${nav.id}`}>{nav.title}</a>
                 </li>
