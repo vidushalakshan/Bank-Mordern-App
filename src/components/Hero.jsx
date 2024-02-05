@@ -16,16 +16,16 @@ const Hero = () => {
           </p>
         </div> 
 
-        <div>
-          <h1 className="text-white">
-            The Next <br /> <span className="text-gradient">Generation</span>{" "}
+        <div className="flex flex-row justify-between items-center w-full">
+          <h1 className="text-white font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading[100.8px]">
+            The Next <br className="sm:block hidden" /> <span className="text-gradient">Generation</span>{" "}
           </h1>
           <div></div>
         </div>
 
-        <h1 className="text-white">Payment Method</h1>
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full ">Payment Method</h1>
 
-        <p className="text-white">
+        <p className={`${style.paragraph} max-w-[470px] mt-5`}>
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
