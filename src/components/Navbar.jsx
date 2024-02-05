@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {close, logo, menu} from "../assets";
 
 const Navbar = () => {
   return (
-    <div>
-        Navbar
-    </div>
+    <nav>
+        <img src={logo} alt="navLogo" />
+        <ul>
+            <li>
+                
+            </li>
+        </ul>
+    </nav>
   )
 }
 
