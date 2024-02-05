@@ -6,7 +6,9 @@ import style from '../style';
 const Navbar = () => {
   return (
     <nav>
-        <img src={logo} alt="navLogo" />
+        <img src={logo} alt="navLogo" 
+        className='w-[124px] h-32px'
+        />
         <ul>
             {navLinks.map((nav, index) => (
                 <li
