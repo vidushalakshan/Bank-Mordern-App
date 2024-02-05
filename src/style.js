@@ -1,6 +1,8 @@
 const style = {
     boxWidth: "xl:max-w-[1280px] w-full",
 
+    paragraph:"font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+
     flexCenter: "flex justify-center item-center",
     flexStart: "flex justify-center items-start",
 
