@@ -2,6 +2,7 @@ import React from "react";
 
 import { discount, robot } from "../assets";
 import style from "../style";
+import GetStarted from "./GetStarted";
 
 const Hero = () => {
   return (
@@ -20,7 +21,9 @@ const Hero = () => {
           <h1 className="text-white font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading[100.8px]">
             The Next <br className="sm:block hidden" /> <span className="text-gradient">Generation</span>{" "}
           </h1>
-          <div></div>
+          <div>
+            <GetStarted />
+          </div>
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full ">Payment Method</h1>
