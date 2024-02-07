@@ -7,16 +7,16 @@ const GetStarted = () => {
     <div className={`${style.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}>
         <div className={`${style.flexCenter} flex-col bg-primary w-[100%] h-[100%] rounded-full`}>
             <div className={`${style.flexStart} flex-row`}>
-                <p>
-                    <span>
+                <p className='font-medium font-poppins text-[18px] leading-[23.4px]'>
+                    <span className='text-gradient'>
                         Get
                     </span>
                 </p>
-                <img src={arrowUp} alt="" />
+                <img src={arrowUp} alt="arrow-up" className='w-[23px] h-[23px] object-contain'/>
             </div>
 
-            <p>
-                Started
+            <p className={`font-medium font-poppins text-[18px]  leading-[23.4px] ${style.flexCenter}`}>
+                <span className='text-gradient'>Started</span>
             </p>
         </div>
     </div>
