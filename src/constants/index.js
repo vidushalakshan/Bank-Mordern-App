@@ -1,3 +1,4 @@
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
     {
@@ -34,5 +35,27 @@ export const stats = [
         id : 's-3',
         title : 'TRANSACTION',
         value : "$230M"
+    },
+];
+
+
+export const features = [
+    {
+        id:'f-1',
+        icon: star,
+        title: "Rewards",
+        content: 'The best credit cards offer some tantalizing combinations of promotions and prizes',
+    },
+    {
+        id:'f-2',
+        icon: shield,
+        title: "100% Secured",
+        content: 'We take proactive steps make sure your information and transactions are secure.',
+    },
+    {
+        id:'f-3',
+        icon: send,
+        title: "Balance Transfer",
+        content: 'A balance transfer credit card can save you a lot of money in interest charges.',
     },
 ];

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import style from "./style";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
+import Business from "./components/Business";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <div className={`bg-primary ${style.flexStart}`}>
         <div  className={`${style.boxWidth}`}>
           <Stats />
+          <Business />
         </div>
       </div>
     </div>
