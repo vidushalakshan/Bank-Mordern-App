@@ -1,11 +1,12 @@
 import React from 'react'
 import { stats } from '../constants'
+import style from '../style';
 
 const Stats = () => {
   return (
-    <div>
+    <div className={`${style.flexCenter} felx-row flex-wrap sm:mb-20 mb-6`}>
         {stats.map((stat) => (
-            <div className='text-white'>
+            <div key={stat.id} className='flex flex-row items-center justify-start flex-1 m-3'>
                 <h4 className='font-semibold font-poppins xs:text-[40.89px] text-[30.86px] xs:leading-[53.16px] leading-[43.16px] text-white'>
                     {stat.value}
                 </h4>
