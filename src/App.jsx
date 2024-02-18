@@ -20,7 +20,7 @@ function App() {
         </div>
       </div>
 
-      <div className={`bg-primary ${style.flexStart}`}>
+      <div className={`bg-primary ${style.paddingX} ${style.flexCenter}`}>
         <div  className={`${style.boxWidth}`}>
           <Stats />
           <Business />
