@@ -1,6 +1,7 @@
 import React from "react";
 import style, { layout } from "../style";
 import Button from "./Button";
+import { features } from "../constants";
 
 const Business = () => {
   return (
@@ -17,8 +18,31 @@ const Business = () => {
         </p>
         <Button styles={"mt-10"} />
       </div>
+
+      <div className={`${layout.sectionImg} flex-col`}>
+        {features.map((feature, index) => (
+          <FeatureCard key={feature.id} {...feature} index={index} />
+        ))}
+      </div>
     </section>
   );
 };
+
+
+const FeatureCard = ({icon, title, content, index}) => (
+  <div>
+    <div>
+      <img src={icon} alt="star" />
+    </div>
+    <div>
+      <h4>
+        {title}
+      </h4>
+      <p>
+        {content}
+      </p>
+    </div>
+  </div>
+);
 
 export default Business;
