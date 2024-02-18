@@ -30,9 +30,9 @@ const Business = () => {
 
 
 const FeatureCard = ({icon, title, content, index}) => (
-  <div>
-    <div>
-      <img src={icon} alt="star" />
+  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length -1 ? "mb-6" : "mb-0"} feature-card`}>
+    <div className={`w-[64px] h-[64px] rounded-full ${style.flexCenter} bg-dimBlue`}>
+      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain"/>
     </div>
     <div>
       <h4>
