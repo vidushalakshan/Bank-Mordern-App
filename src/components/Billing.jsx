@@ -4,8 +4,8 @@ import style, { layout } from "../style";
 
 const Billing = () => {
   return (
-    <section>
-      <div>
+    <section id="product" className={layout.sectionReverse}>
+      <div className={layout.sectionImgReverse}>
         <img
           src={bill}
           alt="billing"
@@ -13,20 +13,20 @@ const Billing = () => {
         />
       </div>
 
-      <div>
-        <h2>
+      <div className={layout.sectionInfo}>
+        <h2 className={style.heading2}>
           Easily control your <br /> billing & invoicing
         </h2>
 
-        <p>
+        <p className={`${style.paragraph} max-w-[470px] mt-5`}>
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
           aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
           placerat.
         </p>
 
-        <div>
-            <img src={apple} alt="apple_store" />
-            <img src={google} alt="google_play" />
+        <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+            <img src={apple} alt="apple_store" className="w-[128.86px] h-[42.05px] object-contain mr-5 cursor-pointer"/>
+            <img src={google} alt="google_play" className="w-[144.17px] h-[43.08px] object-contain cursor-pointer" />
         </div>
       </div>
     </section>
