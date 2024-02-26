@@ -1,5 +1,8 @@
 import React from "react";
 import style from "../style";
+import { feedback } from "../constants";
+import { card } from "../assets";
+import FeedbackCard from "./FeedbackCard";
 
 const Testimonials = () => {
   return (
@@ -17,6 +20,10 @@ const Testimonials = () => {
             anywhare on the planet.
             </p>
         </div>
+      </div>
+
+      <div>
+        {feedback.map((feed) => <FeedbackCard key={feed.id} {...feed}/>)}
       </div>
     </section>
   );
