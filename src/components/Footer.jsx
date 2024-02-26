@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { logo } from '../assets';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <section>
+        <div>
+            <div>
+                <img src={logo} alt="hoobank" />
+            </div>
+        </div>
+    </section>
   )
 }
 
-export default Footer
+export default Footer;
