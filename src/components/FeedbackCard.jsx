@@ -3,19 +3,19 @@ import { quotes } from '../assets';
 
 const FeedbackCard = ({content, name, title, img}) => {
   return (
-    <section>
-        <img src={quotes} alt="double_quotes" />
-        <p>
+    <section className='flex px-10 py-12  justify-between flex-col rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
+        <img src={quotes} alt="double_quotes" className='w-[42.6px] h-[27.6px] object-contain'/>
+        <p className='font-normal font-poppins text-[18px] leading-[32.4px] text-white my-10'>
             {content}
         </p>
 
-        <div>
-            <img src={img} alt="name" />
-            <div>
-                <h4>
+        <div className='flex felx-row'>
+            <img src={img} alt="name" className='w-[48px] h-[48px] rounded-full '/>
+            <div className='flex flex-col ml-4'>
+                <h4 className='font-semibold font-poppins text-20px leading-[32px] text-white'>
                     {name}
                 </h4>
-                <p>
+                <p className='font-normal font-poppins text-[16px] leading[24px] text-dimWhite'>
                     {title}
                 </p>
             </div>
