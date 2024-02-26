@@ -8,6 +8,7 @@ import Billing from "./components/Billing";
 import CardDeal from "./components/CardDeal";
 import Testimonials from "./components/Testimonials";
 import Clients from "./components/Clients";
+import CTA from "./components/CTA";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <CardDeal />
           <Testimonials />
           <Clients />
+          <CTA />
         </div>
       </div>
     </div>
