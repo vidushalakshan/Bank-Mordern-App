@@ -5,8 +5,8 @@ import { card } from "../assets";
 
 const CardDeal = () => {
   return (
-    <section>
-      <div>
+    <section className={layout.section}>
+      <div className={layout.sectionInfo}>
         <h2>
           Find a better card deal <br />
           in few easy steps.
@@ -19,7 +19,7 @@ const CardDeal = () => {
         <Button />
       </div>
 
-      <div>
+      <div className={layout.sectionInfo}>
         <img src={card} alt="billing" />
       </div>
     </section>
