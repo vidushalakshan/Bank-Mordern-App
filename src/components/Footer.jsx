@@ -46,6 +46,24 @@ const Footer = () => {
           ))}
         </div>
       </div>
+
+      <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+        <p className="font-normal text-center font-poppins text-[18px] leading-[27px] text-white">
+            Copyright © 2024 HooBank.All Right Reserved.</p>
+
+        <div className="flex items-center justify-center felx-row">
+          {socialMedia.map((social, index) => (
+            <img
+              src={social.icon}
+              alt={social.id}
+              key={social.id}
+              className={`w-[21px] h-[21px] object-contain cursor-pointer 
+                    ${index !== socialMedia.length - 1 ? "mr-6" : "mr-0"}`}
+              onClick={() => window.open(social.link)}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
